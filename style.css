@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f9f9f9;
+}
+.music {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.title {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #38a7ff;
+  display: inline-flex;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.player {
+  position: relative;
+  width: 500px;
+  min-height: 100px;
+  background: #fff;
+  border: 2px solid #fff;
+  padding: 20px 30px;
+  border-radius: 80px;
+  box-shadow: -10px -10px 15px #fff, 10px 10px 15px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 15px #fff, inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.btns {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.btns span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  color: #777;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1) , 
+              0px 5px 10px rgba(0, 0, 0, 0.1) , 
+              0px 10px 15px rgba(0, 0, 0, 0.1)
+}
+.btns span:active,
+.btns span.active{
+    color: #ff669a;
+    box-shadow: inset 0 -7px 5px rgba(0, 0, 0, 0.025),
+                inset 0px 5px 10px  rgba(0, 0, 0, 0.15)   ;
+}  
+.btns span.playpause{
+    width: 100px ;
+    height: 100px ;
+} 
+.btns span ion-icon{
+    font-size: 2em;
+}
+.btns span.playpause ion-icon{
+    font-size: 3em;
+}
