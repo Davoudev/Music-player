@@ -25,12 +25,16 @@ let song_playing = false;
 function playsong() {
   song_playing = true;
   audio.play();
+  playpause.classList.add("active")
+  playpause.innerHTML = '<ion-icon name="pause-outline"></ion-icon>'
 }
 
 //puase song
 function puasesong() {
   song_playing = false;
   audio.pause();
+  playpause.classList.remove("active")
+playpause.innerHTML = '<ion-icon name="play-outline"></ion-icon>'
 }
 
 //play or puase song on click
