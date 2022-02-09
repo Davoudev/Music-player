@@ -65,7 +65,7 @@ prev.addEventListener("click" , prevsong);
 
 
 function nextsong(){
-  i--;
+  i++;
   if(i > songlist.length - 1){
     i = 0
   }
