@@ -52,3 +52,24 @@ let i = 0
 
 
 loadsong(songlist[i])
+
+function prevsong(){
+  i--;
+  if(i<0){
+    i = songlist.length - 1
+  }
+  loadsong(songlist[i])
+  playsong();
+}
+prev.addEventListener("click" , prevsong);
+
+
+function nextsong(){
+  i--;
+  if(i > songlist.length - 1){
+    i = 0
+  }
+  loadsong(songlist[i])
+  playsong();
+}
+next.addEventListener("click" , nextsong);
