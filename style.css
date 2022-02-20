@@ -77,3 +77,15 @@ body {
 .btns span.playpause ion-icon{
     font-size: 3em;
 }
+
+.tireh {
+  border-radius: 50%;
+  width: 80vw;
+  height: 70vh;
+  text-align: center;
+  z-index: 20;
+}
+
+.back {
+ z-index:9;
+ }
