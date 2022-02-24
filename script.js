@@ -14,8 +14,8 @@ const songlist = [
     songName: "dark",
   },
   {
-    path: "./Musics/Mohsen Chavoshi - Kojaei - Copy.mp3",
-    songName: "kojaei",
+    path: "./Musics/Sasha-Sloan-Dancing-With-Your-Ghost-128.mp3",
+    songName: "Dancing-with-your-ghost",
   },
 ];
 
